@@ -47,10 +47,10 @@ function Chat() {
             <div
               key={`${message.uid}_${message.createdAt}`}
               style={{
-                background: user.id === message.id ? '#03A9F4' : '#B39DDB',
+                background: user.uid === message.uid ? '#03A9F4' : '#B39DDB',
                 padding: '10px',
                 borderRadius: '10px',
-                marginLeft: user.id === message.id ? 'auto' : '10px',
+                marginLeft: user.uid === message.uid ? 'auto' : '10px',
                 marginBottom: '10px',
                 marginTop: '10px',
                 width: 'fit-content',
